@@ -1,41 +1,27 @@
 # WildCatcher — Releases / リリース配布
 
-This repository is the **update channel** for WildCatcher. It contains only the
-update manifest (`version.json`) and the released Windows builds. No source code.
+## アップデート
 
-WildCatcher checks `version.json` on startup (at most once per day) and from
-**About → Check for updates**. From version 2.1.3 onward the app downloads and
-installs updates by itself — no manual download, no reinstall.
+**2.1.3 以降をお使いの方:** アプリ内の「更新」または「About → 更新の確認」から更新できます。ライセンス、モデル、設定プロファイルを保持します。
 
-このリポジトリは WildCatcher の**アップデート配信用**です。更新情報
-（`version.json`）と Windows 版のビルドのみを置いています。ソースコードは
-含まれません。
+**2.1.0 / 2.1.1 をお使いの方:** 旧バージョンの更新確認に不具合があるため、現在のセットアップを一度実行してください。以後はアプリ内で更新できます。
 
-WildCatcher はバージョン 2.1.3 以降、アプリ内で更新のダウンロードと
-インストールを自動で行います。手動でのダウンロードや再インストールは不要です。
+## 初めてインストールする場合 / First installation
 
----
+| パソコン / Computer | ダウンロード / Download |
+|---|---|
+| Windows 64-bit | [最新版のリリース](../../releases/latest) にある `_Setup.exe` を実行してください。 |
+| Mac — Apple Silicon (M1/M2/M3/M4 など) | [Mac Apple Silicon DMG](../../releases/latest/download/WildCatcher-macOS-arm64.dmg) |
+| Mac — Intel | [Mac Intel DMG](../../releases/latest/download/WildCatcher-macOS-x64.dmg) |
 
-## Manual download / 手動ダウンロード
+Mac: DMG を開き、WildCatcher を Applications にドラッグしてください。動画再生に別途 VLC は不要です。現在の Mac ビルドは Developer ID 署名・公証が未設定のため、初回起動時に macOS の承認が必要になる場合があります。
 
-See [Releases](../../releases/latest) → `WildCatcher-Windows-x64.zip`.
+GUI、CLI、アップデーターを同梱しています。アプリ内更新用の ZIP も Assets にあります。
 
-1. Download and extract the archive
-2. Open the `WildCatcher` folder
-3. Run `WildCatcher.exe`
+## Source code links / ソースコードのリンクについて
 
-## `version.json`
+この公開リポジトリには配布情報と `version.json` のみを置いています。アプリケーションのソースコードは公開していません。GitHub の「Source code」リンクに含まれるのは、このリポジトリの説明と更新情報だけです。
 
-```jsonc
-{
-  "version": "2.1.3",          // plain semver; compared against the running app
-  "tag": "v2.1.3",
-  "notes": "...",              // shown in the update dialog
-  "page": "https://github.com/Theego99/WildCatcher-releases/releases/latest",
-  "windows": {
-    "url": "https://github.com/.../WildCatcher-Windows-x64.zip",
-    "sha256": "...",           // verified after download; a mismatch aborts
-    "size": 0                  // bytes, for the progress bar
-  }
-}
-```
+This public repository contains release information and update metadata only. The application source is private. GitHub's automatic **Source code** archives contain this repository's README and version information, not WildCatcher's application source.
+
+Windows clients on 2.1.3 or later can update inside the app. Mac packages support subsequent in-app updates, with user data stored outside the application bundle. The current Mac builds are ad-hoc signed; warning-free first launch requires Developer ID signing and notarization.
