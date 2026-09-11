@@ -1,11 +1,21 @@
 {
-  "version": "2.1.3",
-  "tag": "v2.1.3",
-  "notes": "アプリ内から更新できるようになりました（ダウンロードとインストールを自動実行）。\nIn-app updates: WildCatcher now downloads and installs updates by itself.",
+  "version": "2.2.0",
+  "tag": "v2.2.0",
+  "notes": "安全なアプリ内更新、解析の復元、操作画面と結果確認の改善。\nSafer updates, reliable resume, improved workspace and results review.",
   "page": "https://github.com/Theego99/WildCatcher-releases/releases/latest",
   "windows": {
-    "url": "https://github.com/Theego99/WildCatcher-releases/releases/download/v2.1.3/WildCatcher-Windows-x64.zip",
-    "sha256": "3893081c981e7e05b1f3be0b04d04533a33754a55359654d0beb9271d25b3dc8",
-    "size": 774552903
+    "url": "https://github.com/Theego99/WildCatcher-releases/releases/download/untagged-976e8cbefdc8be0baace/WildCatcher-Windows-x64.zip",
+    "sha256": "d4129ea502effa70022794c6af0597d23c50374428798786e9bd3885bb474fbf",
+    "size": 785216452
+  },
+  "macos_arm64": {
+    "url": "https://github.com/Theego99/WildCatcher-releases/releases/download/untagged-976e8cbefdc8be0baace/WildCatcher-macOS-arm64.zip",
+    "sha256": "474af5ff7fb4d1635fcd7fb3af944011a2c9dadd68783f3db35cca31829a8d74",
+    "size": 699530425
+  },
+  "macos_x64": {
+    "url": "https://github.com/Theego99/WildCatcher-releases/releases/download/untagged-976e8cbefdc8be0baace/WildCatcher-macOS-x64.zip",
+    "sha256": "0c7f6a6ae5069d360f491d148eb552590d1c34c956a062dab254b79e743694f6",
+    "size": 802415374
   }
 }
