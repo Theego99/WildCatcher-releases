@@ -1,21 +1,21 @@
 {
-  "version": "2.2.0",
-  "tag": "v2.2.0",
-  "notes": "安全なアプリ内更新、解析の復元、操作画面と結果確認の改善。\nSafer updates, reliable resume, improved workspace and results review.",
+  "version": "2.2.1",
+  "tag": "v2.2.1",
+  "notes": "更新の起動確認、進行状況の表示、再起動失敗時の復元を改善しました。\nVerified updater startup, installation progress and recovery if the updated app fails to start.",
   "page": "https://github.com/Theego99/WildCatcher-releases/releases/latest",
   "windows": {
-    "url": "https://github.com/Theego99/WildCatcher-releases/releases/download/v2.2.0/WildCatcher-Windows-x64.zip",
-    "sha256": "d4129ea502effa70022794c6af0597d23c50374428798786e9bd3885bb474fbf",
-    "size": 785216452
+    "url": "https://github.com/Theego99/WildCatcher-releases/releases/download/v2.2.1/WildCatcher-Windows-x64.zip",
+    "sha256": "d3b05f9c608e54d59dae9e5425ed89138e82cd02e9de7fc4166547f0ceee42c3",
+    "size": 788134100
   },
   "macos_arm64": {
-    "url": "https://github.com/Theego99/WildCatcher-releases/releases/download/v2.2.0/WildCatcher-macOS-arm64.zip",
-    "sha256": "474af5ff7fb4d1635fcd7fb3af944011a2c9dadd68783f3db35cca31829a8d74",
-    "size": 699530425
+    "url": "https://github.com/Theego99/WildCatcher-releases/releases/download/v2.2.1/WildCatcher-macOS-arm64.zip",
+    "sha256": "697d34507f9c2879091436a8cc4b1c52665845204b58fa4b09cc390671161dda",
+    "size": 701913399
   },
   "macos_x64": {
-    "url": "https://github.com/Theego99/WildCatcher-releases/releases/download/v2.2.0/WildCatcher-macOS-x64.zip",
-    "sha256": "0c7f6a6ae5069d360f491d148eb552590d1c34c956a062dab254b79e743694f6",
-    "size": 802415374
+    "url": "https://github.com/Theego99/WildCatcher-releases/releases/download/v2.2.1/WildCatcher-macOS-x64.zip",
+    "sha256": "555e84fcfe65e0d69ecc4a4a81d715f5a125666c2edaa2b53ba1400f60b56694",
+    "size": 804955624
   }
 }
