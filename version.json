@@ -1,21 +1,24 @@
 {
-  "version": "2.2.1",
-  "tag": "v2.2.1",
-  "notes": "更新の起動確認、進行状況の表示、再起動失敗時の復元を改善しました。\nVerified updater startup, installation progress and recovery if the updated app fails to start.",
+  "version": "2.2.2",
+  "tag": "v2.2.2",
+  "notes": "# WildCatcher 2.2.2 — Clearer controls / 見やすい操作画面\n\n## 日本語\n\n- 解析ホーム・解析設定・出力設定・設定の保存・環境設定を分け、目的の操作に直接移動できるようにしました。\n- 文字サイズを統一し、拡大後に言語やモデルを変更しても、小さい文字に戻らないようにしました。狭い画面では操作を縦に並べ、ページ全体をスクロールできます。\n- 保存した設定、クラス別オプション、出力する列、標準ダイアログ、処理結果の通知などの翻訳漏れを修正しました。日本語・英語・スペイン語・中国語・韓国語に対応します。\n- 設定名・独自モデルの種名・出力データの識別子は保持します。言語を切り替えても、設定内容は変わりません。\n- 元ファイルの保護設定を分かりやすくし、削除設定との関係を説明しました。\n- 結果確認画面は文字サイズと画面幅に合わせて配置を調整します。設定の上書き時には確認を表示します。\n\n**更新方法:** 2.2.0 以降は、アプリの「更新」から更新できます。ライセンス、モデル、保存した設定は保持されます。\n\n2.1.3 以前で更新時にアプリが閉じたまま戻らない場合は、最新版の `_Setup.exe` を一度実行してください。旧アップデーターの不具合を修復するために必要です。\n\n**Mac:** GitHub の課金・利用上限により最終修正版の再ビルドができないため、Apple Silicon・Intel ともに検証済みの 2.2.1 を引き続き配信します。Windows は 2.2.2 に更新できます。\n\n## English\n\n- Dedicated workspace, analysis, reports, profiles and preferences pages replace the long mixed settings panel.\n- Consistent text sizes cover newly created controls, live language changes and dialogs. Controls stack on narrow windows; the pipeline uses one page scrollbar.\n- Completed missing translations for profiles, class rules, report columns, standard dialog buttons and processing outcome dialogs across all five interface languages.\n- Saved configurations, custom model labels and export identifiers retain their original values when the display language changes.\n- Clearer original-file protection controls and explanations of class deletion rules.\n- Responsive results gallery and confirmation before overwriting a saved configuration.\n- Changing the interface language preserves processing checkpoints, so it does not force previously analyzed files to run again.\n\n**Updating:** clients on **2.2.0 and later** can use **Updates** inside the app. Existing licences, models and profiles are retained. Affected **2.1.3 and earlier** installations need the current Windows `_Setup.exe` once to repair their older updater.\n\nWindows includes the GUI, CLI and updater. Version 2.2.2 is available for Windows. Both Mac architectures remain on verified 2.2.1 packages: GitHub account billing/spending limits prevented rebuilding the final cache-preservation fix. The update feed explicitly preserves each Mac version and checksum. Mac builds remain ad-hoc signed; Developer ID signing and notarization are not configured, so first launch may require macOS approval.\n\nApplication source remains private. The automatic source archives in this public release repository contain release metadata only.\n",
   "page": "https://github.com/Theego99/WildCatcher-releases/releases/latest",
   "windows": {
-    "url": "https://github.com/Theego99/WildCatcher-releases/releases/download/v2.2.1/WildCatcher-Windows-x64.zip",
-    "sha256": "d3b05f9c608e54d59dae9e5425ed89138e82cd02e9de7fc4166547f0ceee42c3",
-    "size": 788134100
+    "url": "https://github.com/Theego99/WildCatcher-releases/releases/download/v2.2.2/WildCatcher-Windows-x64.zip",
+    "sha256": "c3da5b01fdfeefa283a307a8a3a23541b2f44e2fd5d6da76c57ec4a42d673250",
+    "size": 788214587,
+    "version": "2.2.2"
   },
   "macos_arm64": {
     "url": "https://github.com/Theego99/WildCatcher-releases/releases/download/v2.2.1/WildCatcher-macOS-arm64.zip",
     "sha256": "697d34507f9c2879091436a8cc4b1c52665845204b58fa4b09cc390671161dda",
-    "size": 701913399
+    "size": 701913399,
+    "version": "2.2.1"
   },
   "macos_x64": {
     "url": "https://github.com/Theego99/WildCatcher-releases/releases/download/v2.2.1/WildCatcher-macOS-x64.zip",
     "sha256": "555e84fcfe65e0d69ecc4a4a81d715f5a125666c2edaa2b53ba1400f60b56694",
-    "size": 804955624
+    "size": 804955624,
+    "version": "2.2.1"
   }
 }
