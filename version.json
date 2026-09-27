@@ -1,13 +1,13 @@
 {
-  "version": "2.2.3",
-  "tag": "v2.2.3",
-  "notes": "# WildCatcher 2.2.3 — Video player fix / 動画再生の修正\n\n## 日本語\n\n- アプリ内で更新した後に動画プレーヤーを開くと、存在しないパスの警告が表示される不具合を修正しました。\n- サイドバー、アプリ情報、初回案内のロゴに淡いセージグリーンの円形背景を加え、暗い画面でもはっきり見えるようにしました。\n\n**更新方法:** アプリの「更新」から 2.2.3 に更新できます。ライセンス、モデル、保存した設定は保持されます。2.1.3 以前の旧アップデーターでアプリが戻らない場合は、最新版の `_Setup.exe` を一度実行してください。\n\n**Mac:** GitHub の課金・利用上限により新しいビルドを作成できないため、Apple Silicon・Intel ともに検証済みの 2.2.1 を引き続き配信します。\n\n## English\n\n- Fixed the false missing-path warning when opening the video player after an in-app update. Opening an explicitly selected video file or folder still works normally.\n- Added a soft sage-green circle behind the original logo in the sidebar, About dialog and welcome screen, and restored the logo's full contrast.\n\n**Updating:** Windows clients on 2.2.0 and later can select **Updates** inside the app. Licences, models and saved settings are retained. Affected 2.1.3 and earlier installations need the current Windows `_Setup.exe` once to repair their older updater.\n\nWindows includes the app, CLI and updater. Both Mac channels remain on verified 2.2.1 packages because GitHub account billing/spending limits prevent new builds.\n\nApplication source remains private. Automatic source archives in this public repository contain release metadata only.\n",
+  "version": "2.2.4",
+  "tag": "v2.2.4",
+  "notes": "# WildCatcher 2.2.4 — Folder browsing and previews / フォルダー表示の修正\n\n## 日本語\n\n- フォルダー選択画面で、フォルダー内の画像・動画ファイルも確認できるようになりました。\n- アプリ内で画像・動画を選択するとプレビューを表示します。動画は「動画を再生」またはダブルクリックで開けます。画像はダブルクリックで拡大表示できます。\n- フォルダーを切り替えると、前の処理の進捗・ログ・プレビューをクリアし、選択中のフォルダーの結果を参照します。サブフォルダーへの移動も処理対象に反映されます。\n- 起動するたびにバックグラウンドで更新を確認します。新しいバージョンがある場合のみ更新案内を表示し、最新版の場合や接続できない場合は表示しません。手動の更新確認では確認結果を表示します。\n- ライセンス、モデル、保存済みの設定、処理結果ファイルは保持されます。\n\n**更新方法:** Windows版 2.2.0 以降は、アプリ内の「更新」から更新できます。旧バージョンや手動導入には、下記の **WildCatcher-Windows-x64.zip** をダウンロードし、「すべて展開」してフォルダー内の **WildCatcher.exe** を起動してください。`_internal` フォルダーは移動・削除しないでください。\n\n## English\n\n- The folder picker now shows files inside folders, including photos and videos.\n- Select media in the workspace for an image or video-frame preview. Double-click an image to enlarge it; double-click a video or select **Play video** to open the player.\n- Changing folders clears the previous run's on-screen progress, log and preview. Results and processing follow the selected folder, including subfolder navigation. Folder selection is locked during processing to avoid mixing runs.\n- Every app launch checks for updates in the background. Only a newer release prompts to upgrade. No popup appears when current or offline; manual checks still report their outcome.\n- Existing licences, models, saved settings and result files are retained.\n\n**Updating:** Windows clients on 2.2.0 and later can select **Updates** in the app. For manual installation, download **WildCatcher-Windows-x64.zip**, extract the entire archive, then run **WildCatcher.exe** inside. Keep the `_internal` folder with the application. **Source code (zip)** is not the application download.\n\nWindows includes the app, CLI and updater. Both Mac channels retain their verified 2.2.1 downloads while new Mac builds are blocked by the GitHub account's billing/spending limit. Application source remains private; automatic source archives in the public releases repository contain release metadata only.\n",
   "page": "https://github.com/Theego99/WildCatcher-releases/releases/latest",
   "windows": {
-    "url": "https://github.com/Theego99/WildCatcher-releases/releases/download/v2.2.3/WildCatcher-Windows-x64.zip",
-    "sha256": "04f1ddd3742da3c6d57df95069a801965d6972150e57b9acc4775cd486ec7777",
-    "size": 788214377,
-    "version": "2.2.3"
+    "url": "https://github.com/Theego99/WildCatcher-releases/releases/download/v2.2.4/WildCatcher-Windows-x64.zip",
+    "sha256": "516373cc6b531e86f11c2a5e20b684e3896368c43e11d4f5a390bbfb63ca0067",
+    "size": 788224970,
+    "version": "2.2.4"
   },
   "macos_arm64": {
     "url": "https://github.com/Theego99/WildCatcher-releases/releases/download/v2.2.1/WildCatcher-macOS-arm64.zip",
