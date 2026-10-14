@@ -1,24 +1,24 @@
 {
-  "version": "2.2.5",
-  "tag": "v2.2.5",
-  "notes": "# WildCatcher 2.2.5 — Flexible output columns / 出力列のカスタマイズ\n\n## 日本語\n\n**Windows・macOS版 2.2.5（2026年10月4日）**\n\n- 「出力設定」で、CSV・Excelに含める情報を検索・選択できます。列をドラッグするか「上へ・下へ」で並べ替えると、出力ファイルも同じ順序になります。\n- 列名を編集できます。「確認者」「確認後の種名」「行動メモ」など、出力後に手入力するための名前付きの空の列も追加できます。\n- プレビューと、Excel・CSVのサンプル保存で、解析前に列の構成を確認できます。サンプルは解析結果ではありません。\n- 選択した形式、列の順序、変更した列名、空の列は、設定プロファイルに保存して再利用できます。起動時の自動読込みとCLIでの利用にも対応します。\n- 以前の設定プロファイルも読み込めます。列の構成だけを変更した場合は、再開処理で保存済みの解析結果を利用できます。\n- 日本語・英語・スペイン語・中国語・韓国語に対応。JSON・SQLiteの標準項目は従来のキーを維持し、PDF・外部ツール向け形式は専用の構成を維持します。\n\n**更新方法:** Windows版 2.2.0以降は、アプリ内の「更新」から更新できます。起動時も、新しいバージョンがある場合に案内します。手動導入は **WildCatcher-Windows-x64.zip** をダウンロードして「すべて展開」し、中の **WildCatcher.exe** を起動してください。`_internal` フォルダーはアプリと一緒に保管してください。既存のライセンス、モデル、保存した設定は保持されます。Windows版にはGUI・CLI・更新プログラムを同梱しています。\n\n**Mac:** Apple Silicon（arm64）とIntel（x64）をそれぞれ提供します。既存のアプリから更新するか、お使いのMacに合うDMGを開き、WildCatcher.appを「アプリケーション」にコピーしてください。CLIと更新プログラムも同梱しています。VLCの追加インストールは不要です。\n\n**発行元の認証:** 本配布にはWindowsの発行元証明書・Apple Developer IDによる署名と公証がまだ設定されていないため、OSや組織のセキュリティ確認が表示される場合があります。\n\n## English\n\n**Windows and macOS 2.2.5 — October 4, 2026**\n\n- Choose the information to export using the searchable column list. Reorder columns by dragging or using Move up / down; Excel and CSV follow that order.\n- Rename headings and add named blank columns such as Observer, Verified species or Behaviour notes for later manual labeling.\n- Check the layout in a live preview and save example Excel/CSV files before processing. Example rows are not analysis results.\n- Save formats, column order, custom headings and blank columns in reusable configuration profiles, including automatic startup loading and CLI use.\n- Existing profiles remain compatible. Changing only the output layout reuses cached analysis when resuming processing.\n- The editor supports all five app languages. JSON/SQLite retain standard field keys; PDF and specialized external-tool exports keep their dedicated layouts.\n\n**Updating:** Windows 2.2.0 and later can update from **Updates** in the app. Startup checks also offer newer versions. For manual installation, download **WildCatcher-Windows-x64.zip**, extract the entire archive and run **WildCatcher.exe** inside. Keep `_internal` with the app. Existing licenses, models and saved settings are preserved. The Windows package includes the GUI, CLI and updater; an optional Setup installer is also provided.\n\n**Mac:** Separate Apple Silicon (arm64) and Intel (x64) builds are included. Update from the existing app, or open the DMG for your Mac and copy WildCatcher.app to Applications. Each includes the CLI and updater. No separate VLC installation is required.\n\n**Publisher certification:** Windows publisher signing and Apple Developer ID signing/notarization are not yet configured. OS or organizational security checks may still appear.\n\nApplication source stays private. GitHub's automatic “Source code” archives in this release repository contain public release metadata only; they are not app downloads.\n",
+  "version": "2.2.6",
+  "tag": "v2.2.6",
+  "notes": "# WildCatcher 2.2.6 — Update recovery / 更新時の案内と再試行\n\n## 日本語\n\n- 別の WildCatcher または CLI が起動中の場合、ダウンロード前と再起動前に案内します。現在のアプリを閉じる前に、別の作業を終了できます。\n- Windows の更新プログラムに「再試行」「キャンセル」を追加しました。別のアプリを終了した後、ダウンロード済みの更新をそのまま使用できます。旧バージョンから今回の更新を適用する際にも、新しい更新プログラムが使用されます。\n- 別のウィンドウが見つからない場合は、作業を保存してパソコンを再起動し、WildCatcher を1つだけ起動して更新をやり直してください。実行中の解析や CLI を強制終了することはありません。\n- 更新のインストールに失敗した際、「更新を確認できませんでした」と表示する不具合を修正しました。別のアプリが起動中の場合の説明を5言語に対応させ、技術的な情報を詳細に分けました。\n- 2.2.5 の出力列の並べ替え・列名編集・空の列の追加と、設定プロファイルでの再利用は引き続き利用できます。\n\nWindows はアプリ内の「更新」から更新できます。手動導入は ZIP をすべて展開してください。任意で Setup インストーラーも利用できます。Mac は Apple Silicon（arm64）と Intel（x64）に対応するファイルを選択してください。ライセンス、モデル、保存した設定は保持されます。\n\n## English\n\n- Check for other running copies and CLI jobs before downloading and again before closing the current app.\n- The Windows updater now offers Retry and Cancel when another process holds the installation open. After closing that process, Retry uses the same downloaded update. Older app versions also use this improved helper when installing this release.\n- If the other copy has no visible window, save your work, restart the computer, open one copy of WildCatcher and retry. The updater never forcibly stops another analysis or CLI job.\n- Installation failures no longer appear as update-check/network failures. The explanation for another running copy is translated into all five app languages, with technical information kept in Details.\n- Includes the configurable output columns and reusable profiles introduced in 2.2.5.\n\nUpdate from inside the app, or download the Windows ZIP/optional Setup installer or the appropriate Apple Silicon/Intel Mac package. Licences, models and saved settings are retained.\n\nPublisher certification is unchanged: Windows publisher signing and Apple Developer ID signing/notarization are not yet configured, so OS or organizational security checks may still appear.\n\nApplication source stays private. GitHub's automatic “Source code” archives in this release repository contain public metadata only.\n",
   "page": "https://github.com/Theego99/WildCatcher-releases/releases/latest",
   "windows": {
-    "url": "https://github.com/Theego99/WildCatcher-releases/releases/download/v2.2.5/WildCatcher-Windows-x64.zip",
-    "sha256": "ced7f8e624d97876679e0c2a3d33e188f798b8b54455f74dbee4a0c494ce1502",
-    "size": 788249035,
-    "version": "2.2.5"
+    "url": "https://github.com/Theego99/WildCatcher-releases/releases/download/v2.2.6/WildCatcher-Windows-x64.zip",
+    "sha256": "df565f19a1294cf0741dca5a254690e7a757178972c296e0ea6e423cc12d2867",
+    "size": 788255639,
+    "version": "2.2.6"
   },
   "macos_arm64": {
-    "url": "https://github.com/Theego99/WildCatcher-releases/releases/download/v2.2.5/WildCatcher-macOS-arm64.zip",
-    "sha256": "aed13aa89c5c6b5075ca3d4c3e2cb1f6cf38e77a5bd5111c153d1a9ed16eb8bb",
-    "size": 702220518,
-    "version": "2.2.5"
+    "url": "https://github.com/Theego99/WildCatcher-releases/releases/download/v2.2.6/WildCatcher-macOS-arm64.zip",
+    "sha256": "6f417ad12ddbcfbcfb8854b4489cd2806ddd766d2dca91d09e96c1f82d2c60a7",
+    "size": 701182007,
+    "version": "2.2.6"
   },
   "macos_x64": {
-    "url": "https://github.com/Theego99/WildCatcher-releases/releases/download/v2.2.5/WildCatcher-macOS-x64.zip",
-    "sha256": "55eee430715241dd2d683ac6ef41a10fc661d35504131f49a1f1d202da7ca52f",
-    "size": 805254064,
-    "version": "2.2.5"
+    "url": "https://github.com/Theego99/WildCatcher-releases/releases/download/v2.2.6/WildCatcher-macOS-x64.zip",
+    "sha256": "40ecbd76e02c0f564e8c09e9a91fbd8fd0c88672cdcd3a69e2577d5b52f6b679",
+    "size": 805010863,
+    "version": "2.2.6"
   }
 }
