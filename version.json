@@ -1,24 +1,24 @@
 {
-  "version": "2.2.6",
-  "tag": "v2.2.6",
-  "notes": "# WildCatcher 2.2.6 — Update recovery / 更新時の案内と再試行\n\n## 日本語\n\n- 別の WildCatcher または CLI が起動中の場合、ダウンロード前と再起動前に案内します。現在のアプリを閉じる前に、別の作業を終了できます。\n- Windows の更新プログラムに「再試行」「キャンセル」を追加しました。別のアプリを終了した後、ダウンロード済みの更新をそのまま使用できます。旧バージョンから今回の更新を適用する際にも、新しい更新プログラムが使用されます。\n- 別のウィンドウが見つからない場合は、作業を保存してパソコンを再起動し、WildCatcher を1つだけ起動して更新をやり直してください。実行中の解析や CLI を強制終了することはありません。\n- 更新のインストールに失敗した際、「更新を確認できませんでした」と表示する不具合を修正しました。別のアプリが起動中の場合の説明を5言語に対応させ、技術的な情報を詳細に分けました。\n- 2.2.5 の出力列の並べ替え・列名編集・空の列の追加と、設定プロファイルでの再利用は引き続き利用できます。\n\nWindows はアプリ内の「更新」から更新できます。手動導入は ZIP をすべて展開してください。任意で Setup インストーラーも利用できます。Mac は Apple Silicon（arm64）と Intel（x64）に対応するファイルを選択してください。ライセンス、モデル、保存した設定は保持されます。\n\n## English\n\n- Check for other running copies and CLI jobs before downloading and again before closing the current app.\n- The Windows updater now offers Retry and Cancel when another process holds the installation open. After closing that process, Retry uses the same downloaded update. Older app versions also use this improved helper when installing this release.\n- If the other copy has no visible window, save your work, restart the computer, open one copy of WildCatcher and retry. The updater never forcibly stops another analysis or CLI job.\n- Installation failures no longer appear as update-check/network failures. The explanation for another running copy is translated into all five app languages, with technical information kept in Details.\n- Includes the configurable output columns and reusable profiles introduced in 2.2.5.\n\nUpdate from inside the app, or download the Windows ZIP/optional Setup installer or the appropriate Apple Silicon/Intel Mac package. Licences, models and saved settings are retained.\n\nPublisher certification is unchanged: Windows publisher signing and Apple Developer ID signing/notarization are not yet configured, so OS or organizational security checks may still appear.\n\nApplication source stays private. GitHub's automatic “Source code” archives in this release repository contain public metadata only.\n",
+  "version": "2.2.7",
+  "tag": "v2.2.7",
+  "notes": "# WildCatcher 2.2.7 — Correct resumed report paths / 再開時のレポートパス修正\n\n## Japanese\n\n- ファイル名の分類タグを変更した後も、再開時の CSV / Excel に最新のファイル名とパスを出力します。\n- 保存済みの解析結果を再利用するとき、現在のフォルダー内にあるファイルと照合してレポートを更新します。\n\n## English\n\n- Resumed CSV and Excel reports now use current filenames and paths after classification prefixes are changed or removed.\n- Cached analysis results are reconciled with files currently in the selected folder before reports are written.\n\n---\n# WildCatcher 2.2.6 — Update recovery / 更新時の案内と再試行\n\n## 日本語\n\n- 別の WildCatcher または CLI が起動中の場合、ダウンロード前と再起動前に案内します。現在のアプリを閉じる前に、別の作業を終了できます。\n- Windows の更新プログラムに「再試行」「キャンセル」を追加しました。別のアプリを終了した後、ダウンロード済みの更新をそのまま使用できます。旧バージョンから今回の更新を適用する際にも、新しい更新プログラムが使用されます。\n- 別のウィンドウが見つからない場合は、作業を保存してパソコンを再起動し、WildCatcher を1つだけ起動して更新をやり直してください。実行中の解析や CLI を強制終了することはありません。\n- 更新のインストールに失敗した際、「更新を確認できませんでした」と表示する不具合を修正しました。別のアプリが起動中の場合の説明を5言語に対応させ、技術的な情報を詳細に分けました。\n- 2.2.5 の出力列の並べ替え・列名編集・空の列の追加と、設定プロファイルでの再利用は引き続き利用できます。\n\nWindows はアプリ内の「更新」から更新できます。手動導入は ZIP をすべて展開してください。任意で Setup インストーラーも利用できます。Mac は Apple Silicon（arm64）と Intel（x64）に対応するファイルを選択してください。ライセンス、モデル、保存した設定は保持されます。\n\n## English\n\n- Check for other running copies and CLI jobs before downloading and again before closing the current app.\n- The Windows updater now offers Retry and Cancel when another process holds the installation open. After closing that process, Retry uses the same downloaded update. Older app versions also use this improved helper when installing this release.\n- If the other copy has no visible window, save your work, restart the computer, open one copy of WildCatcher and retry. The updater never forcibly stops another analysis or CLI job.\n- Installation failures no longer appear as update-check/network failures. The explanation for another running copy is translated into all five app languages, with technical information kept in Details.\n- Includes the configurable output columns and reusable profiles introduced in 2.2.5.\n\nUpdate from inside the app, or download the Windows ZIP/optional Setup installer or the appropriate Apple Silicon/Intel Mac package. Licences, models and saved settings are retained.\n\nPublisher certification is unchanged: Windows publisher signing and Apple Developer ID signing/notarization are not yet configured, so OS or organizational security checks may still appear.\n\nApplication source stays private. GitHub's automatic “Source code” archives in this release repository contain public metadata only.\n",
   "page": "https://github.com/Theego99/WildCatcher-releases/releases/latest",
   "windows": {
-    "url": "https://github.com/Theego99/WildCatcher-releases/releases/download/v2.2.6/WildCatcher-Windows-x64.zip",
-    "sha256": "df565f19a1294cf0741dca5a254690e7a757178972c296e0ea6e423cc12d2867",
-    "size": 788255639,
-    "version": "2.2.6"
+    "url": "https://github.com/Theego99/WildCatcher-releases/releases/download/v2.2.7/WildCatcher-Windows-x64.zip",
+    "sha256": "808404557ed6b5921c24a7d2aed57488e5b9c8f7e662e6f454b85aa9c6a6cfd4",
+    "size": 820434546,
+    "version": "2.2.7"
   },
   "macos_arm64": {
-    "url": "https://github.com/Theego99/WildCatcher-releases/releases/download/v2.2.6/WildCatcher-macOS-arm64.zip",
-    "sha256": "6f417ad12ddbcfbcfb8854b4489cd2806ddd766d2dca91d09e96c1f82d2c60a7",
-    "size": 701182007,
-    "version": "2.2.6"
+    "url": "https://github.com/Theego99/WildCatcher-releases/releases/download/v2.2.7/WildCatcher-macOS-arm64.zip",
+    "sha256": "648d34a9f717b701a19788e97da73e0087a0bd4ba92c1f4c0e005e66ccbd8178",
+    "size": 701789317,
+    "version": "2.2.7"
   },
   "macos_x64": {
-    "url": "https://github.com/Theego99/WildCatcher-releases/releases/download/v2.2.6/WildCatcher-macOS-x64.zip",
-    "sha256": "40ecbd76e02c0f564e8c09e9a91fbd8fd0c88672cdcd3a69e2577d5b52f6b679",
-    "size": 805010863,
-    "version": "2.2.6"
+    "url": "https://github.com/Theego99/WildCatcher-releases/releases/download/v2.2.7/WildCatcher-macOS-x64.zip",
+    "sha256": "ce091fa55cab186d6be1b78014a397919f048f461c586e09a711b88b7c7b5c0e",
+    "size": 805816744,
+    "version": "2.2.7"
   }
 }
